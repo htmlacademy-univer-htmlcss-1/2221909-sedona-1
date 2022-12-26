@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+    <title>Седона</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<body>
+<header>
+  <img class="logo" src="img/logo.png" alt="Логотип Седоны" height="70" width="139">
+  <nav class="navigation">
+    
+    
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link" href="main.html"><strong>Главная</strong></a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="about.html"><strong>О Седоне</strong></a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="hotels.html"><strong>Гостиницы</strong></a>
+      </li>
+    </ul>
 
-  </body>
+    <ul class="navigation-list navigation-user">
+      <li class="navigation-item">
+        <a class="navigation-link" href="">
+          <img src="img/search.svg" alt="Поиск" title="Поиск" height="17" width="19">
+          <!-- <span class="visually-hidden">Поиск</span> -->
+        </a>
+      </li>
+                
+      <li class="navigation-item">
+        <a class="navigation-link" href="">
+          <img src="img/favorite.svg" alt="Избранное" title="Сердешко" height="17" width="19">
+          <!-- <span class="visually-hidden">Избранное</span> -->
+        </a>
+      </li>
+      
+      <li class="navigation-item">
+        <button class="i-need-this" type="button">
+          <!-- <img src="img/Rectangle 1.png" alt="Хочу сюда"><strong> --> Хочу сюда! <!-- </strong> -->           
+        </button>
+      </li>
+    </ul> 
+  </nav>
+</header>
+
+<main>
+  <section class="welc">
+  <img src="files/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+  </section>
+  <!-- <img src="img/index-background.png" alt="Баннер"> -->
+  <img src="files/Vector.png">
+  
+  <section class="Sedona">
+    <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+  </section>
+
+  <section class="advantages-list">
+    <div class="advantage advantage-n1">
+      <div class="text">
+        <p>Настоящий городок</p>
+        <p> - №1 - </p>
+        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+    </div>
+    </div>
+    <img src="files/photo-1.png" width="800" height="384" alt="photo1">
+    <div class="advantage housing">
+      <div class="text">
+        <img src="files/house.png" width="77" height="72" alt="Иконка жилья">
+        <p>Жильё</p>
+        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+
+      </div>
+    </div>
+    <div class="advantage food">
+      <div class="text">
+        <img src="files/food.png" width="76" height="72" alt="Иконка еды">
+        <p>Еда</p>
+        <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+    </div>
+    <div class="advantage souvenirs">
+      <div class="text">
+        <img src="files/gift.png" width="76" height="76" alt="Иконка сувениров">
+        <p>Сувениры</p>
+        <p>Не только китайского, но и настоящего местного производства!</p>
+      </div>
+    </div>
+    <img src="files/photo-2.png" width="800" height="384" alt="photo-2">
+    <div class="advantage advantage-n2">
+      <div class="text">
+        <p>Там есть мост дьявола</p>
+        <p> - №2 - </p>
+        <p>Да, по нему можно пройти! <br> Если вы осмелитесь, разумеется</p>
+      </div>
+    </div>
+    <div class="advantage advantage-n3">
+      <div class="text">
+        <p>Небольшая площадь</p>
+        <p> - №3 - </p>
+        <p>Все достопримечательности находятся очень близко</p>
+      </div>
+    </div>
+    <div class="advantage advantage-n4">
+      <div class="text">
+        <p>КРАСИВАЯ ДОРОГА</p>
+        <p> - №4 - </p>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+    </div>
+    <div class="advantage advantage-n5">
+      <div class="text">
+        <p>Мало туристов</p>
+        <p> - №5 - </p>
+        <p>Большинство едет в Гранд-Каньон и толпится там</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="find-hotel">
+  <h2 class="title"><strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong></h2>
+  <p class="text">Укажите предпологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+  </section>
+  
+  <section class="sub">
+  <h2 class="title"><strong>ПОДПИШИТЕСЬ НА РАССЫЛКУ</strong></h2>
+  <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+  <form class="newsletter-form" action="">
+    <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+    <button class="newsletter-button" type="submit">
+      ПОДПИСАТЬСЯ
+    </button>
+  </form>
+</section>  
+</main>
+
+
+
+<footer>
+  <ul class="navigation-footer">
+    <li class="navigation-item-footer">
+      <a class="visually-hidden" href="https://vk.com/toygirrrl">
+        <img src="img/vk.png" width="48" height="40">
+      </a>
+    </li>
+
+    <li class="navigation-item-footer">
+      <a class="visually-hidden" href="https://t.me/t0ygirrrl">
+        <img src="img/tg.png" width="48" height="40">
+      </a>
+    </li>
+
+    <li class="navigation-item-footer">
+      <a class="visually-hidden" href="https://www.youtube.com/toygirl3">
+        <img src="img/yt.png" width="48" height="40">
+      </a>
+      
+    </li>
+  </ul>
+  <h2 class="number">8 (800) 555-35-35</h2>
+  <img src="img/logo_htmlacademy.png" width="115" height="34">
+</footer>
+</body>
 </html>
